@@ -101,6 +101,25 @@ class Demucs(nn.Module):
         self.samplerate = samplerate
         self.segment_length = segment_length
 
+        # Print all model parameters
+        print(f"Model Parameters:")
+        print(f"  sources: {self.sources}")
+        print(f"  audio_channels: {self.audio_channels}")
+        print(f"  channels: {self.channels}")
+        print(f"  depth: {self.depth}")
+        print(f"  rewrite: {rewrite}")
+        print(f"  glu: {glu}")
+        print(f"  rescale: {rescale}")
+        print(f"  resample: {self.resample}")
+        print(f"  kernel_size: {self.kernel_size}")
+        print(f"  stride: {self.stride}")
+        print(f"  growth: {growth}")
+        print(f"  lstm_layers: {lstm_layers}")
+        print(f"  context: {self.context}")
+        print(f"  normalize: {self.normalize}")
+        print(f"  samplerate: {self.samplerate}")
+        print(f"  segment_length: {self.segment_length}")
+
         self.encoder = nn.ModuleList()
         self.decoder = nn.ModuleList()
 

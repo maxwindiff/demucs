@@ -12,3 +12,8 @@ Session.vim
 /notebooks
 /separated
 /metadata
+
+*.mp3
+*.wav
+*.safetensors
+.claude
